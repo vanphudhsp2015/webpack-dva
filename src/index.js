@@ -1,6 +1,6 @@
 import dva from 'dva';
 import 'antd/dist/antd.css';
-import './assets/styles/main.scss';
+import 'styles/main.scss';
 import createLoading from 'dva-loading';
 // Initialize
 const app = dva({});
@@ -12,7 +12,7 @@ app.use(createLoading({ effects: true }));
 app.model(require('./models/posts').default);
 
 // router
-app.router(require('./routes/routes').default);
+app.router(require('routes').default);
 
 // start
 app.start('#root');

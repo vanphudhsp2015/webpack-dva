@@ -69,13 +69,11 @@ const resolveMain = {
   ],
   alias: {
     pages: path.resolve(__dirname, './src/pages'),
-    routes: path.resolve(__dirname, './src/routes'),
+    routes: path.resolve(__dirname, './src/routes/', 'routes.js'),
     layouts: path.resolve(__dirname, './src/layouts'),
     components: path.resolve(__dirname, './src/components'),
     styles: path.resolve(__dirname, './src/assets/styles'),
-    actions: path.resolve(__dirname, './src/actions/'),
-    constants: path.resolve(__dirname, './src/constants'),
-    reducers: path.resolve(__dirname, './src/reducers'),
+    services: path.resolve(__dirname, './src/services'),
   },
 };
 

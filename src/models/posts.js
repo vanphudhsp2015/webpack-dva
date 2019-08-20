@@ -1,5 +1,5 @@
 import { message } from 'antd';
-import * as service from '../services/posts';
+import * as service from 'services/posts';
 
 export default {
   namespace: 'posts',
